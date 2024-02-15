@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Fghi´s</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+      <h1 id="titulo"><img src="images/fghis-logo.png" alt="Fghi´s"></h1>
+      <p id="descricao">Complete seu registro para poder usufruir do Fghi's</p>
+      <form id="registro">
+        <fieldset>
+          <label for="nome">Nome: <input id="nome" name="nome" type="text" required placeholder="Insira seu Nome" /></label>
+          <label for="email">Email: <input id="email" name="email" type="email" required placeholder="Insira seu Email" /></label>
+          <label for="idade">Idade (opcional): <input type="number" name="idade" id="idade" min="13" max="120" placeholder="Idade" /></label>
+        </fieldset>
+        <fieldset>
+          <label for="favorio"> Qual sua fragrância favorita das nossas velas?
+              <select name="favorito" id="selecao">
+                  <option value="">(Selecionar)</option>
+                  <option value="1">Lavanda</option>
+                  <option value="2">Maça e Canela</option>
+                  <option value="3">Alecrim</option>
+                  <option value="4">Outra</option>
+              </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Você nos recomendaria para um amigo?</legend>
+              <label for="certeza"><input class="inline" id="certeza" type="radio" name="recomendaria" checked
+              value="certeza"> Definitivamente</label>
+              <label for="talvez"><input class="inline" id="talvez" type="radio" name="recomendaria" value="recomendaria"> Talvez</label>
+              <label for="sem-certeza"><input class="inline" id="sem-certeza" type="radio" name="recomendaria" value="sem-certeza"> Não tenho certeza</label>
+        </fieldset>
+        <fieldset>
+          <legend>Como você nos conheceu?</legend>
+          <label for="conheceu"><input class="inline" id="conheceu" name="conheceu-como" type="checkbox" value="como-nos-conheceu" checked/>Internet</label>
+          <label for="conheceu"><input class="inline" id="conheceu" name="conheceu-como" type="checkbox" value="como-nos-conheceu"/>Anúncios</label>
+          <label for="conheceu"><input class="inline" id="conheceu" name="conheceu-como" type="checkbox" value="como-nos-conheceu"/>Amigos</label>
+        </fieldset>
+        <fieldset>
+          <label for="criticas">O que poderiamos melhorar?
+          <textarea id="criticas" name="criticas" rows="7" cols="30" placeholder="Eu acho que..."></textarea>
+          </label>
+        </fieldset>
+        <input id="enviar" type="submit" value="Enviar">
+      </form>
+</body>
+</html>
